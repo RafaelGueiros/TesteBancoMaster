@@ -77,11 +77,11 @@ TesteBancoMaster.Tests/
 		- Para testes, foi criado um repositório simulado (RepositorioDeRotasSimulado), que evita dependências de arquivos e acelera a execução.
 
 ### 3. Busca de rotas com um algoritmo simples:
-   **Objetivo**: Resolver o problema proposto de forma eficiente e compreensível.
+   	**Objetivo**: Resolver o problema proposto de forma eficiente e compreensível.
 	**Como foi implementado**: 
 		- Um algoritmo de busca baseado em filas foi utilizado para encontrar o menor custo entre origem e destino.
 
 ### 4. Testes unitários como garantia de qualidade:
-   **Objetivo**: Garantir o funcionamento correto da aplicação.
+   	**Objetivo**: Garantir o funcionamento correto da aplicação.
 	**Como foi implementado**:
 		- Os testes cobrem os principais casos de uso (rotas válidas, melhores custos, entradas inválidas).
