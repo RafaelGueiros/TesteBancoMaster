@@ -22,17 +22,17 @@ Para executar a aplicação, siga os passos abaixo:
    ```
    dotnet restore
    ```
-   
-   Ao iniciar a aplicação aparecerá a seguinte mensagem "Digite o caminho do arquivo de rotas:", informar o caminho completo do arquivo de rotas, conforme exemplo abaixo:
-   
-   ```
-   C:\Projetos\TesteBancoMaster\rotas.txt
-   ```
 
 4. **Executar a Aplicação:**
    Para rodar a aplicação no modo de console, execute:
    ```
    dotnet run
+   ```
+   
+   Ao iniciar a aplicação aparecerá a seguinte mensagem "Digite o caminho do arquivo de rotas:", informar o caminho completo do arquivo de rotas, conforme exemplo abaixo:
+   
+   ```
+   C:\Projetos\TesteBancoMaster\rotas.txt
    ```
 
 5. **Testes:**
