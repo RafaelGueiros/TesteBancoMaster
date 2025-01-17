@@ -63,25 +63,25 @@ TesteBancoMaster.Tests/
 
 ## Decisões de Design Adotadas
 
-### 1. Separação de responsabilidades:
+1. **Separação de responsabilidades:**
 	**Objetivo**: Tornar o código modular, testável e fácil de manter.
 	**Como foi implementado**: 
 		- A lógica de gerenciamento de rotas (ex.: busca de melhores rotas) foi colocada na classe GerenciadorDeRotas, mantendo-a separada do acesso a dados.
 		- A persistência e leitura de dados das rotas são tratadas pela classe RepositorioDeRotas, que abstrai o acesso ao sistema de arquivos.
 		- A classe ResultadoRota encapsula os dados de saída para facilitar o retorno de informações sobre rotas.
 
-### 2. Extensibilidade e substituição:
+2. **Extensibilidade e substituição:**
 	**Objetivo**: Facilitar alterações futuras e a substituição de partes do sistema.
 	**Como foi implementado**:
 		- O uso da classe RepositorioDeRotas permite substituir o mecanismo de armazenamento de rotas (como mudar de arquivo para banco de dados) sem alterar a lógica de negócios.
 		- Para testes, foi criado um repositório simulado (RepositorioDeRotasSimulado), que evita dependências de arquivos e acelera a execução.
 
-### 3. Busca de rotas com um algoritmo simples:
+3. **Busca de rotas com um algoritmo simples:**
    	**Objetivo**: Resolver o problema proposto de forma eficiente e compreensível.
 	**Como foi implementado**: 
 		- Um algoritmo de busca baseado em filas foi utilizado para encontrar o menor custo entre origem e destino.
 
-### 4. Testes unitários como garantia de qualidade:
+4. **Testes unitários como garantia de qualidade:**
    	**Objetivo**: Garantir o funcionamento correto da aplicação.
 	**Como foi implementado**:
 		- Os testes cobrem os principais casos de uso (rotas válidas, melhores custos, entradas inválidas).
