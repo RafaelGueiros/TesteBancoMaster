@@ -64,8 +64,8 @@ TesteBancoMaster.Tests/
 ## Decisões de Design Adotadas
 
 1. **Separação de responsabilidades:**
-	**Objetivo**: Tornar o código modular, testável e fácil de manter.
-	**Como foi implementado**: 
+	- **Objetivo**: Tornar o código modular, testável e fácil de manter.
+	- **Como foi implementado**: 
 		- A lógica de gerenciamento de rotas (ex.: busca de melhores rotas) foi colocada na classe GerenciadorDeRotas, mantendo-a separada do acesso a dados.
 		- A persistência e leitura de dados das rotas são tratadas pela classe RepositorioDeRotas, que abstrai o acesso ao sistema de arquivos.
 		- A classe ResultadoRota encapsula os dados de saída para facilitar o retorno de informações sobre rotas.
